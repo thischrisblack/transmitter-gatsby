@@ -1,0 +1,41 @@
+{
+  "name": "transmitter-gatsby",
+  "description": "A Gatsby front-end for the Transmitter CMS.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
+    "firebase": "^7.5.0",
+    "gatsby": "^2.18.4",
+    "gatsby-plugin-firebase": "^0.1.6",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-styled-components": "^3.1.14",
+    "gatsby-source-filesystem": "^2.1.39",
+    "gatsby-transformer-remark": "^2.6.38",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-markdown": "^4.2.2",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
