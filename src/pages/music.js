@@ -5,7 +5,7 @@ import SongList from "../components/songlist"
 import TypeList from "../components/typelist"
 import Loading from "../components/loadingScreen"
 import GetPosts from "../components/getPosts"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 import styled from "styled-components"
 
 const MusicContainer = styled.div`
@@ -13,7 +13,7 @@ const MusicContainer = styled.div`
 `
 
 const MusicIntro = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   > h2 {
     margin-bottom: 1rem;
   }

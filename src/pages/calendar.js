@@ -3,7 +3,7 @@ import GetPosts from "../components/getPosts"
 import Layout from "../components/layout"
 import Loading from "../components/loadingScreen"
 import Post from "../components/post"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 import styled from "styled-components"
 
 const MessagesContainer = styled.div`

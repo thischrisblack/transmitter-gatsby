@@ -3,8 +3,8 @@ import { useFirebase } from "gatsby-plugin-firebase"
 import ReactMarkdown from "react-markdown"
 import Layout from "../components/layout"
 import Loading from "../components/loadingScreen"
-import SoundPlayer from "../components/SoundPlayer"
-import SEO from "../components/SEO"
+import SoundPlayer from "../components/soundPlayer"
+import SEO from "../components/seo"
 import styled from "styled-components"
 
 const MessageItem = styled.div`
@@ -94,7 +94,10 @@ const Message = props => {
   return (
     <Layout>
       {loading && <Loading message="Loading..." />}
-      <SEO title={message.title || "A message from Chris Black."} description={message.message || "A message from Chris Black."} />
+      <SEO
+        title={message.title || "A message from Chris Black."}
+        description={message.message || "A message from Chris Black."}
+      />
       <MessageItem>
         <Timestamp>
           {new Date(Number(message.timestamp)).toUTCString()}
