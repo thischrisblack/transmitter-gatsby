@@ -23,7 +23,6 @@ const SEO = ({ title, description, image, pathname, article }) => (
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || "/"}`,
-        canonical: `${siteUrl}${pathname || "/"}`,
       }
 
       return (
