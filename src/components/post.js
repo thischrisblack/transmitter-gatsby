@@ -64,7 +64,7 @@ const Image = styled.div`
 `
 
 const StyledParagraph = styled.p`
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
 `
 
 const MessageLink = styled.a`
