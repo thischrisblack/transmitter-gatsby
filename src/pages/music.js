@@ -79,9 +79,6 @@ const Music = ({ messages, loading }) => {
 
   const updateFilter = event => {
     const { key, value } = event.target.dataset
-
-    console.log(key, value)
-
     setFilters({
       [key]: value,
     })
@@ -92,7 +89,6 @@ const Music = ({ messages, loading }) => {
   const soundRef = React.createRef()
 
   const playSong = songId => {
-    console.log(songId)
     if (songId === nowPlaying) {
       toggleAudio()
     } else {
@@ -135,7 +131,12 @@ const Music = ({ messages, loading }) => {
   return (
     <Layout>
       {loading && <Loading message="Loading..." />}
-      <SEO title="Music" />
+      <SEO
+        title="The music of Chris Black"
+        description="Stream and purchase the music of Chris Black, including his most recent release for contrabass and percussion: Everything Happens for a Reason."
+        image="/img/bass-01.jpg"
+        pathname="/music/"
+      />
       <MusicContainer>
         <MusicIntro>
           <h2>The music of Chris Black.</h2>

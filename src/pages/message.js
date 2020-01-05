@@ -83,8 +83,6 @@ const Message = props => {
       .then(snapshot => {
         const result = snapshot.val() || {}
 
-        console.log(result[messageId])
-
         setMessage(result[messageId])
 
         setLoading(false)
@@ -97,6 +95,7 @@ const Message = props => {
       <SEO
         title={message.title || "A message from Chris Black."}
         description={message.message || "A message from Chris Black."}
+        pathname={"/message/?" + messageId}
       />
       <MessageItem>
         <Timestamp>

@@ -13,8 +13,13 @@ const Contact = styled.div`
 
 export default () => (
   <Layout>
-    <SEO title="Contact" description="Contact Chris Black." />
+    <SEO
+      title="Contact"
+      description="Contact Chris Black."
+      pathname="/contact/"
+    />
     <Contact>
+      <h2>Contact Chris Black.</h2>
       <p>
         You can reach me at{" "}
         <a href="mailto:black@chrisblack.net">black@chrisblack.net</a>.

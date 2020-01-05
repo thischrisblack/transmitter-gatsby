@@ -11,7 +11,7 @@ module.exports = {
     titleTemplate: `Chris Black: %s`,
     image: `/img/ChrisBlack-Train.jpg`,
     imageAlt: `Chris Black in a train.`,
-    description: `Transmitting music and code from an undisclosed location.`,
+    description: `Chris Black is a musician and JavaScript developer creating new sound and code in an undisclosed location.`,
     url: `https://www.chrisblack.net`,
     twitterUsername: `@thischrisblack`,
   },
@@ -48,6 +48,20 @@ module.exports = {
           functions: false,
           performance: false,
         },
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-67947602-4",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
       },
     },
   ],

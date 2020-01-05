@@ -20,12 +20,13 @@ const Code = ({ messages, loading }) => {
     <Layout>
       {loading && <Loading message="Loading..." />}
       <SEO
-        title="Code"
+        title="Software Developer"
         description="Chris Black is a JavaScript developer whose favorite framework is whatever framework he's working in right now, or, even better, none."
+        pathname="/code/"
       />
       <MessagesContainer>
         <h2>
-          Both music and code are structures made of nothing that could contain
+          Both music and code are structures made of nothing that contain
           everything.
         </h2>
         <MessageList>

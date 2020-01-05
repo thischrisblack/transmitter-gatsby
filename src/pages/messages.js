@@ -16,11 +16,14 @@ const MessageList = styled.ul`
 
 const Messages = ({ messages, loading }) => {
   if (!loading && !messages.length) return <p>Nothing.</p>
-  console.log(messages)
   return (
     <Layout>
       {loading && <Loading message="Loading..." />}
-      <SEO title="Messages" />
+      <SEO
+        title="Messages for you."
+        description="Transmissions from an undisclosed location."
+        pathname="/messages/"
+      />
       <MessagesContainer>
         <MessageList>
           {messages.map(message => (

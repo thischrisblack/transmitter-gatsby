@@ -22,8 +22,10 @@ const Calendar = ({ messages, loading }) => {
       <SEO
         title="Calendar"
         description="A calendar of Chris Black's events and activities."
+        pathname="/calendar/"
       />
       <MessagesContainer>
+        <h2>What I'm doing.</h2>
         <MessageList>
           {messages.map(message => (
             <Post message={message} key={message.id} type="calendar" />

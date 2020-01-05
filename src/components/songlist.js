@@ -63,9 +63,6 @@ const SongList = ({
       .once("value")
       .then(snapshot => {
         const result = snapshot.val() || {}
-
-        console.log(result)
-
         setAlbums(result)
       })
   }, [])
@@ -75,7 +72,6 @@ const SongList = ({
   nowPlaying = parseInt(nowPlaying)
 
   const handleClick = event => {
-    console.log(event)
     playSong(event.currentTarget.dataset.track)
   }
 
