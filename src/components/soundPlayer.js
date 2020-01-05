@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { formatTimer } from "../utils"
 
@@ -32,87 +32,76 @@ const ProgressBar = styled.span`
   display: block;
 `
 
-class SoundPlayer extends Component {
-  state = {
-    playing: false,
-    duration: "",
-    progress: 0,
-    progressPercent: 0,
-    trackLoadError: false,
-  }
+const SoundPlayer = props => {
+  const [playing, setPlaying] = useState(false)
+  const [duration, setDuration] = useState("")
+  const [progress, setProgress] = useState(0)
+  const [progressPercent, setProgressPercent] = useState(0)
+  const [trackLoadError, setTrackLoadError] = useState(false)
 
-  soundRef = React.createRef()
+  const soundRef = React.createRef()
 
-  toggleAudio = () => {
-    this.setState({ playing: !this.state.playing })
-    if (this.state.playing) {
-      this.soundRef.current.pause()
-      this.soundRef.current.currentTime = 0
+  const toggleAudio = () => {
+    setPlaying(!playing)
+    if (playing) {
+      soundRef.current.pause()
+      soundRef.current.currentTime = 0
     } else {
-      this.soundRef.current.play()
+      soundRef.current.play()
     }
   }
 
-  audioReady = () => {
-    this.setState({
-      duration: this.soundRef.current.duration,
-    })
+  const audioReady = () => {
+    setDuration(soundRef.current.duration)
   }
 
-  updateProgress = () => {
-    this.setState({ progress: this.soundRef.current.currentTime })
-    const percent = this.state.progress / this.state.duration
-    this.setState({ progressPercent: percent })
+  const updateProgress = () => {
+    setProgress(soundRef.current.currentTime)
+    const percent = progress / duration
+    setProgressPercent(percent)
   }
 
-  resetAudio = () => {
-    this.setState({
-      playing: false,
-      progress: 0,
-      progressPercent: 0,
-    })
+  const resetAudio = () => {
+    setPlaying(false)
+    setProgress(0)
+    setProgressPercent(0)
   }
 
-  trackLoadError = () => {
-    this.setState({ trackLoadError: true })
+  const toggleTrackLoadError = () => {
+    setTrackLoadError(true)
   }
 
-  render() {
-    return (
-      <Player>
-        {this.state.trackLoadError && (
-          <p className="error">
-            At this time it seems I have surpassed my bandwidth quota for the
-            day. Please try again tomorrow.
-          </p>
-        )}
-        <audio
-          src={this.props.source}
-          ref={this.soundRef}
-          onCanPlay={this.audioReady}
-          onTimeUpdate={this.updateProgress}
-          onEnded={this.resetAudio}
-          preload="none"
-          onError={this.trackLoadError}
-        >
-          <p>Your browser doesn't support HTML5 audio.</p>
-        </audio>
-        <Controls onClick={this.toggleAudio}>
-          {/* {this.state.playing ? "◼" : "▶"} */}
-          {this.state.playing ? "STOP" : "PLAY"}
-        </Controls>
-        {this.state.duration && (
-          <Timer>
-            {formatTimer(this.state.progress)} /{" "}
-            {formatTimer(this.state.duration)}
-          </Timer>
-        )}
-        <ProgressBar
-          style={{ width: this.state.progressPercent * 100 + "%" }}
-        />
-      </Player>
-    )
-  }
+  return (
+    <Player>
+      {trackLoadError && (
+        <p className="error">
+          At this time it seems I have surpassed my bandwidth quota for the day.
+          Please try again tomorrow.
+        </p>
+      )}
+      <audio
+        src={props.source}
+        ref={soundRef}
+        onCanPlay={audioReady}
+        onTimeUpdate={updateProgress}
+        onEnded={resetAudio}
+        preload="none"
+        onError={toggleTrackLoadError}
+      >
+        <p>Your browser doesn't support HTML5 audio.</p>
+      </audio>
+
+      {playing && <Controls onClick={toggleAudio}>STOP</Controls>}
+      {!playing && <Controls onClick={toggleAudio}>PLAY</Controls>}
+
+      {playing && (
+        <Timer>
+          {formatTimer(progress)} / {formatTimer(duration)}
+        </Timer>
+      )}
+      <ProgressBar style={{ width: progressPercent * 100 + "%" }} />
+    </Player>
+  )
 }
 
 export default SoundPlayer
