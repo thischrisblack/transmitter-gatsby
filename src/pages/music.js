@@ -29,6 +29,8 @@ const Music = ({ messages, loading }) => {
   const [progress, setProgress] = useState(0)
   const [trackLoadError, setTrackLoadError] = useState(false)
 
+  const soundRef = React.createRef()
+
   useEffect(() => {
     let newFilteredSongs = [...songs]
 
@@ -43,7 +45,7 @@ const Music = ({ messages, loading }) => {
     resetAudio()
     setFilteredSongs(newFilteredSongs)
     setNowPlaying(null)
-  }, [filters])
+  }, [filters, songs])
 
   useEffect(() => {
     toggleAudio()
@@ -58,7 +60,7 @@ const Music = ({ messages, loading }) => {
         soundRef.current.play()
       }
     }
-  }, [playing])
+  }, [playing, soundRef])
 
   if (!loading && !songs.length) {
     const songsList = messages || {}
@@ -85,8 +87,6 @@ const Music = ({ messages, loading }) => {
   }
 
   // PLAYER FUNCTIONS
-
-  const soundRef = React.createRef()
 
   const playSong = songId => {
     if (songId === nowPlaying) {
