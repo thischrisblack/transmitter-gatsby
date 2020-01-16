@@ -15,7 +15,6 @@ const MessageList = styled.ul`
 `
 
 const Calendar = ({ messages, loading }) => {
-  if (!loading && !messages.length) return <p>Nothing.</p>
   return (
     <Layout>
       {loading && <Loading message="Loading..." />}
@@ -26,11 +25,14 @@ const Calendar = ({ messages, loading }) => {
       />
       <MessagesContainer>
         <h2>What I'm doing.</h2>
-        <MessageList>
-          {messages.map(message => (
-            <Post message={message} key={message.id} type="calendar" />
-          ))}
-        </MessageList>
+        {!loading && !messages.length && <p>Nothing.</p>}
+        {!loading && messages.length > 0 && (
+          <MessageList>
+            {messages.map(message => (
+              <Post message={message} key={message.id} type="calendar" />
+            ))}
+          </MessageList>
+        )}
       </MessagesContainer>
     </Layout>
   )

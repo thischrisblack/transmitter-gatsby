@@ -15,7 +15,6 @@ const MessageList = styled.ul`
 `
 
 const Code = ({ messages, loading }) => {
-  if (!loading && !messages.length) return <p>Nothing.</p>
   return (
     <Layout>
       {loading && <Loading message="Loading..." />}
@@ -29,11 +28,14 @@ const Code = ({ messages, loading }) => {
           Both music and code are structures made of nothing that contain
           everything.
         </h2>
-        <MessageList>
-          {messages.map(message => (
-            <Post message={message} key={message.id} type="message" />
-          ))}
-        </MessageList>
+        {!loading && !messages.length && <p>Nothing.</p>}
+        {!loading && messages.length > 0 && (
+          <MessageList>
+            {messages.map(message => (
+              <Post message={message} key={message.id} type="message" />
+            ))}
+          </MessageList>
+        )}
       </MessagesContainer>
     </Layout>
   )

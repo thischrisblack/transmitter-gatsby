@@ -15,7 +15,6 @@ const MessageList = styled.ul`
 `
 
 const Messages = ({ messages, loading }) => {
-  if (!loading && !messages.length) return <p>Nothing.</p>
   return (
     <Layout>
       {loading && <Loading message="Loading..." />}
@@ -25,11 +24,14 @@ const Messages = ({ messages, loading }) => {
         pathname="/messages/"
       />
       <MessagesContainer>
-        <MessageList>
-          {messages.map(message => (
-            <Post message={message} key={message.id} type="message" />
-          ))}
-        </MessageList>
+        {!loading && !messages.length && <p>Nothing.</p>}
+        {!loading && messages.length > 0 && (
+          <MessageList>
+            {messages.map(message => (
+              <Post message={message} key={message.id} type="message" />
+            ))}
+          </MessageList>
+        )}
       </MessagesContainer>
     </Layout>
   )
