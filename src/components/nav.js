@@ -80,6 +80,14 @@ export default props => (
         <NavItem
           className={
             "home-nav__item" +
+            (location.pathname === "/about/" ? " active" : "")
+          }
+        >
+          <Link to="/about/">about</Link>
+        </NavItem>
+        <NavItem
+          className={
+            "home-nav__item" +
             (location.pathname === "/contact/" ? " active" : "")
           }
         >

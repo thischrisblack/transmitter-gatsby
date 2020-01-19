@@ -62,6 +62,7 @@ h2 {
   display: block;
   position: relative;
 }
+
 .fuzzy-image::after {
   content: "";
   background-image: url(../../static/img/static05.gif);
