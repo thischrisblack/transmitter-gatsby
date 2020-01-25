@@ -44,10 +44,10 @@ export default ({ data }) => (
   <Layout>
     <SEO title="About" description="About Chris Black." pathname="/about/" />
     <About>
-      <h2>About Me</h2>
+      <h2>Musical History and Press</h2>
       <p>
-        My name is Chris Black. I am a musician and software developer. I play
-        mostly double bass, and I write mostly JavaScript.
+        My name is Chris Black. I am a musician and composer. I play mostly
+        double bass, but I'll get involved with anything that makes a sound.
       </p>
       <p>
         I am the founder of the alt-classical chamber music concert series{" "}
@@ -74,7 +74,7 @@ export default ({ data }) => (
         <p>
           <em>ChamberLab</em>
           <br />
-          2010 &#8211; Present
+          2010 &#8211; 2017
           <br />
           Founder, artistic director, composer, performer.
         </p>
@@ -193,6 +193,70 @@ export default ({ data }) => (
       </p>
 
       <ListBlock>
+        <strong>Featured on KXCI Radio</strong>
+
+        <PressQuote>
+          30 Minutes spoke with Tucson composer Chris Black and ACLU Attorney
+          Billy Peard about the upcoming Vexations marathon to raise money and
+          awareness for ACLU of Arizona.
+        </PressQuote>
+
+        <PressCitation>
+          <a href="https://kxci.org/podcast/chamberlab-orchestrates-vexations-marathon-for-aclu-fundraiser/">
+            KXCI Radio
+          </a>
+          , November 26th, 2017
+        </PressCitation>
+
+        <strong>
+          Featured on the November 24th, 2017 edition of ARIZONA SPOTLIGHT with
+          host Mark McLemore
+        </strong>
+
+        <PressQuote>
+          Find out why Tucson's "alt-classical" ensemble ChamberLab will perform
+          a century-old piece of music by Erik Satie 840 times in a row in
+          December during an event called "The Vexathon".
+        </PressQuote>
+
+        <PressCitation>
+          <a href="https://radio.azpm.org/p/radio-azspot-splash/2017/11/24/120356-xxx/">
+            AZPM Radio
+          </a>
+          , November 24th, 2017
+        </PressCitation>
+
+        <strong>16 hours of 1-minute music: Sounds like a marathon</strong>
+
+        <PressQuote>
+          How hard can it be to play a one-minute piece of music on the piano -
+          or violin, guitar, tuba, oboe, basically your instrument of choice?
+          Wait, what? Play it 840 times? Well that's a different story.
+        </PressQuote>
+
+        <PressCitation>
+          <a href="http://tucson.com/entertainment/music/hours-of--minute-music-sounds-like-a-marathon/article_627bef8a-91f7-5215-bc24-7d68570674d3.html">
+            Arizona Daily Star
+          </a>
+          , November 20th, 2017
+        </PressCitation>
+
+        <strong>Marathon for a minute song multiplied by 840</strong>
+
+        <PressQuote>
+          You know the neighborhood kid who comes to your door and asks you to
+          sponsor him/her in a marathon. You pledge a quarter a lap - a buck if
+          you're especially generous or confident the kid won't get far - and
+          you pay up based on how many laps/miles they finished.
+        </PressQuote>
+
+        <PressCitation>
+          <a href="http://tucson.com/entertainment/music/marathon-for-a-minute-song-multiplied-by/article_b4018bd0-5b6d-5190-9262-11c124ba3744.html">
+            Arizona Daily Star
+          </a>
+          , October 23rd, 2017
+        </PressCitation>
+
         <strong>Restless Soul</strong>
 
         <PressQuote>
@@ -204,6 +268,7 @@ export default ({ data }) => (
           <a
             href="https://www.tucsonweekly.com/tucson/restless-soul/Content?oid=11843937"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Tucson Weekly
           </a>
@@ -223,6 +288,7 @@ export default ({ data }) => (
           <a
             href="http://tucson.com/entertainment/music/classical-music-will-expand-soundscape-at-rock-n-roll-venue/article_f30c4fa6-d2ce-52b5-a924-c0854a0451b4.html"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Arizona Daily Star
           </a>
@@ -242,6 +308,7 @@ export default ({ data }) => (
           <a
             href="http://www.zocalomagazine.com/sonic-storytelling/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Zocalo
           </a>
@@ -261,6 +328,7 @@ export default ({ data }) => (
           <a
             href="https://www.tucsonweekly.com/tucson/legends-and-shadows/Content?oid=7817560"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Tucson Weekly
           </a>
@@ -280,6 +348,7 @@ export default ({ data }) => (
           <a
             href="https://www.tucsonweekly.com/tucson/soundbites/Content?oid=4826210"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Tucson Weekly
           </a>
@@ -304,6 +373,7 @@ export default ({ data }) => (
           <a
             href="https://www.tucsonweekly.com/WeGotCactus/archives/2013/05/29/chris-black-and-chamber-lab-one-year-down-and-a-wide-open-future-for-chamber-music-in-popular-culture"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Tucson Weekly
           </a>
@@ -325,6 +395,7 @@ export default ({ data }) => (
           <a
             href="https://www.austinchronicle.com/daily/chronolog/2012-11-01/mommy-why-is-chris-black-gonna-be-drunk-at-the-funeral/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Austin Chronicle
           </a>
@@ -344,6 +415,7 @@ export default ({ data }) => (
           <a
             href="https://www.austinchronicle.com/music/2006-07-21/388457/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Austin Chronicle
           </a>
@@ -365,6 +437,7 @@ export default ({ data }) => (
           <a
             href="https://www.tucsonweekly.com/tucson/unusual-inspirations/Content?oid=3227467"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Tucson Weekly
           </a>
@@ -384,6 +457,7 @@ export default ({ data }) => (
           <a
             href="https://www.tucsonweekly.com/tucson/best-alternative-packaging-for-a-compact-disc/BestOf?oid=3534676"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Tucson Weekly
           </a>
@@ -402,6 +476,7 @@ export default ({ data }) => (
           <a
             href="https://www.tucsonweekly.com/tucson/modern-adaptation/Content?oid=2504121"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Tucson Weekly
           </a>
@@ -421,6 +496,7 @@ export default ({ data }) => (
           <a
             href="https://www.tucsonweekly.com/tucson/good-juju/Content?oid=1959986"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Tucson Weekly
           </a>
@@ -441,6 +517,7 @@ export default ({ data }) => (
           <a
             href="https://www.austinchronicle.com/arts/2004-08-27/226174/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Austin Chronicle
           </a>
@@ -460,6 +537,7 @@ export default ({ data }) => (
           <a
             href="https://www.austinchronicle.com/arts/2002-03-01/84767/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Austin Chronicle
           </a>

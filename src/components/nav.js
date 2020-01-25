@@ -72,18 +72,18 @@ export default props => (
         <NavItem
           className={
             "home-nav__item" +
-            (location.pathname === "/calendar/" ? " active" : "")
+            (location.pathname === "/video/" ? " active" : "")
           }
         >
-          <Link to="/calendar/">calendar</Link>
+          <Link to="/video/">video</Link>
         </NavItem>
         <NavItem
           className={
             "home-nav__item" +
-            (location.pathname === "/about/" ? " active" : "")
+            (location.pathname === "/calendar/" ? " active" : "")
           }
         >
-          <Link to="/about/">about</Link>
+          <Link to="/calendar/">calendar</Link>
         </NavItem>
         <NavItem
           className={

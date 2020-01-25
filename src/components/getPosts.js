@@ -32,6 +32,10 @@ const GetPosts = Component => {
               messagesList = messagesList.filter(
                 message => message.type === "code"
               )
+            } else if (props.path === "/video/") {
+              messagesList = messagesList.filter(
+                message => message.type === "video"
+              )
             } else {
               const today = new Date()
               messagesList = messagesList.filter(

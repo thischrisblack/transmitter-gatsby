@@ -67,6 +67,21 @@ const MessageLink = styled.a`
   }
 `
 
+const VideoWrapper = styled.div`
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+
+  > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+`
+
 const Message = props => {
   const [message, setMessage] = useState({})
   const [loading, setLoading] = useState(true)
@@ -88,6 +103,10 @@ const Message = props => {
         setLoading(false)
       })
   }, [])
+
+  const videoLink =
+    message.type === "video" &&
+    message.link.split("watch?v=")[message.link.split("watch?v=").length - 1]
 
   return (
     <Layout>
@@ -115,14 +134,29 @@ const Message = props => {
           </Image>
         )}
 
+        {message.type === "video" && (
+          <VideoWrapper>
+            <iframe
+              width="560"
+              height="315"
+              src={"https://www.youtube.com/embed/" + videoLink}
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </VideoWrapper>
+        )}
+
         {message.message && (
           <ReactMarkdown
             source={message.message}
             renderers={{ paragraph: StyledParagraph }}
           />
         )}
+
         <div className="clear" />
-        {message.link && (
+
+        {message.link && message.type !== "video" && (
           <MessageLink
             className="message__link"
             href={message.link}

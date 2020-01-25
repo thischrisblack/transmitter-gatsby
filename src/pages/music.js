@@ -142,7 +142,9 @@ const Music = ({ messages, loading }) => {
           <h2>The music of Chris Black.</h2>
           <p>
             Most of this music is available for purchase and download at{" "}
-            <a href="https://chrisblackmusic.bandcamp.com/">Bandcamp</a>.
+            <a href="https://chrisblackmusic.bandcamp.com/">Bandcamp</a>. You
+            can also read more about my musical history and the things people
+            have said about it <a href="/about-music">here</a>.
           </p>
         </MusicIntro>
         {filteredSongs[nowPlaying] && (
