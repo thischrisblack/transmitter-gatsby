@@ -41,15 +41,10 @@ const Music = ({ messages, loading }) => {
         ))
     })
 
-    toggleAudio()
     resetAudio()
     setFilteredSongs(newFilteredSongs)
     setNowPlaying(null)
   }, [filters, songs])
-
-  useEffect(() => {
-    toggleAudio()
-  }, [nowPlaying])
 
   useEffect(() => {
     if (soundRef.current) {
@@ -90,15 +85,12 @@ const Music = ({ messages, loading }) => {
 
   const playSong = songId => {
     if (songId === nowPlaying) {
-      toggleAudio()
+      setPlaying(!playing)
     } else {
       resetAudio()
       setNowPlaying(songId)
+      setPlaying(true)
     }
-  }
-
-  const toggleAudio = () => {
-    setPlaying(!playing)
   }
 
   const audioReady = () => {
