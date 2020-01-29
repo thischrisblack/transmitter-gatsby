@@ -42,7 +42,7 @@ const PressQuote = styled.div`
 
 export default ({ data }) => (
   <Layout>
-    <SEO title="About" description="About Chris Black." pathname="/about/" />
+    <SEO title="Musical History" description="An accounting of Chris Black's music history and press." pathname="/about/" />
     <About>
       <h2>Musical History and Press</h2>
       <p>

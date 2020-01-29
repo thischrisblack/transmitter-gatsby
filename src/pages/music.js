@@ -123,13 +123,16 @@ const Music = ({ messages, loading }) => {
   return (
     <Layout>
       {loading && <Loading message="Loading..." />}
+
       <SEO
         title="The music of Chris Black"
         description="Stream and purchase the music of Chris Black, including his most recent release for contrabass and percussion: Everything Happens for a Reason."
         image="/img/bass-01.jpg"
         pathname="/music/"
       />
+
       <MusicContainer>
+        
         <MusicIntro>
           <h2>The music of Chris Black.</h2>
           <p>
@@ -139,6 +142,7 @@ const Music = ({ messages, loading }) => {
             have said about it <a href="/about-music">here</a>.
           </p>
         </MusicIntro>
+
         {filteredSongs[nowPlaying] && (
           <audio
             src={filteredSongs[nowPlaying].url}
