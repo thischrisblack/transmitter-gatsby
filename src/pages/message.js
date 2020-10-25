@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useQueryParam, StringParam } from "use-query-params"
 import { useFirebase } from "gatsby-plugin-firebase"
 import ReactMarkdown from "react-markdown"
 import Layout from "../components/layout"
@@ -85,7 +86,8 @@ const VideoWrapper = styled.div`
 const Message = props => {
   const [message, setMessage] = useState({})
   const [loading, setLoading] = useState(true)
-  const messageId = props.location.search.replace("?", "")
+
+  const [messageId] = useQueryParam("id", StringParam)
 
   useFirebase(firebase => {
     firebase

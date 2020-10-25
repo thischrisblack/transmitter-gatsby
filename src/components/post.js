@@ -116,7 +116,7 @@ const Post = ({ message, type }) => {
               {type === "calendar" ? (
                 formatDate(new Date(Number(message.timestamp)))
               ) : (
-                <Link to={"/message/?" + message.id}>
+                <Link to={"/message/?id=" + message.id}>
                   {new Date(Number(message.timestamp)).toUTCString()}
                 </Link>
               )}
