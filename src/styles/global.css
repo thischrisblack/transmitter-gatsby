@@ -1,112 +1,112 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  /* This defines what 1rem is */
-  /* 1 rem = 10px; 10px/16px = 62.5% */
-  font-size: 62.5%;
+    /* This defines what 1rem is */
+    /* 1 rem = 10px; 10px/16px = 62.5% */
+    font-size: 62.5%;
 }
 
 html::after {
-  content: "";
-  background-image: url(../../static/img/static04.gif);
-  background-size: cover;
-  opacity: 0.03;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;
+    content: '';
+    background-image: url(../../static/img/static04.gif);
+    background-size: cover;
+    opacity: 0.03;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  font-size: 1.5rem;
-  color: #000;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 0;
-  background: #fff;
+    font-family: 'Roboto Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    padding: 0;
+    background: #fff;
 }
 
 @media screen and (min-width: $breakpoint) {
-  body {
-    padding: 2rem;
-  }
+    body {
+        padding: 2rem;
+    }
 }
 
 h1 {
-  margin-bottom: 2rem;
-  color: #000;
-  text-shadow: none;
+    margin-bottom: 2rem;
+    color: #000;
+    text-shadow: none;
 
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: url(../../static/img/static06.gif);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(../../static/img/static06.gif);
 }
 
 h2 {
-  margin-bottom: 3.6rem;
+    margin-bottom: 3.6rem;
 }
 
 .fuzzy-image {
-  width: 100%;
-  display: block;
-  position: relative;
+    width: 100%;
+    display: block;
+    position: relative;
 }
 
 .fuzzy-image::after {
-  content: "";
-  background-image: url(../../static/img/static05.gif);
-  background-size: cover;
-  opacity: 0.25;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
+    content: '';
+    background-image: url(../../static/img/static05.gif);
+    background-size: cover;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
 }
 
 .error {
-  font-weight: 700;
-  padding: 1rem;
-  color: #fff;
-  background-image: url(../../static/img/static06.gif);
-  background-size: cover;
+    font-weight: 700;
+    padding: 1rem;
+    color: #fff;
+    background-image: url(../../static/img/static06.gif);
+    background-size: cover;
 }
 
 .clear {
-  display: block;
-  height: 0px;
-  clear: both;
+    display: block;
+    height: 0px;
+    clear: both;
 }
 
 a {
-  color: #471100;
-  font-weight: 700;
-  text-decoration: none;
-  text-shadow: none;
+    color: #471100;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: none;
 
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: url(../../static/img/static07.gif);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(../../static/img/static07.gif);
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 p {
-  a {
-    border-bottom: 1px solid black;
-  }
+    a {
+        border-bottom: 1px solid black;
+    }
 }
