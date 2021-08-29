@@ -135,13 +135,41 @@ const Music = ({ messages, loading }) => {
                 <MusicIntro>
                     <h2>The music of Chris Black.</h2>
                     <p>
-                        Most of this music is available for purchase and download at{' '}
-                        <a href="https://chrisblackmusic.bandcamp.com/">Bandcamp</a>. It is available on{' '}
-                        <a href="https://open.spotify.com/artist/6bBszGU2QRVLpb3wmQMRtZ?si=7V_M2pqLRzGlJdXra8_6Gw" title="Listen to Chris Black on Spotify">Spotify</a>,{' '}
-                        <a href="https://www.youtube.com/channel/UCImr_bowAoNynK07lXfRIRg" title="Listen to Chris Black on YouTube">YouTube</a>,{' '}
-                        <a href="https://music.apple.com/us/artist/chris-black/1552644612" title="Listen to Chris Black on Apple Music">Apple</a> (not the chamber stuff, unfortunately), and{' '}
-                        <a href="https://www.amazon.com/gp/product/B08WB2577L/ref=dm_ws_sp_ps_dp" title="Listen to Chris Black on Amazon Music">Amazon</a>.{' '}
-                        You can also read more about my musical history and the things people have said about it{' '}
+                        Most of this music is available for purchase and
+                        download at{' '}
+                        <a href="https://chrisblackmusic.bandcamp.com/">
+                            Bandcamp
+                        </a>
+                        . It is also available on{' '}
+                        <a
+                            href="https://open.spotify.com/artist/6bBszGU2QRVLpb3wmQMRtZ?si=7V_M2pqLRzGlJdXra8_6Gw"
+                            title="Listen to Chris Black on Spotify"
+                        >
+                            Spotify
+                        </a>
+                        ,{' '}
+                        <a
+                            href="https://www.youtube.com/channel/UCImr_bowAoNynK07lXfRIRg"
+                            title="Listen to Chris Black on YouTube"
+                        >
+                            YouTube
+                        </a>
+                        ,{' '}
+                        <a
+                            href="https://music.apple.com/us/artist/chris-black/1552644612"
+                            title="Listen to Chris Black on Apple Music"
+                        >
+                            Apple
+                        </a>{' '}
+                        (not the chamber stuff, unfortunately), and{' '}
+                        <a
+                            href="https://www.amazon.com/gp/product/B08WB2577L/ref=dm_ws_sp_ps_dp"
+                            title="Listen to Chris Black on Amazon Music"
+                        >
+                            Amazon
+                        </a>
+                        . You can also read more about my musical history and
+                        the things people have said about it{' '}
                         <a href="/about-music">here</a>.
                     </p>
                 </MusicIntro>

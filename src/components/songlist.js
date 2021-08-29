@@ -22,6 +22,11 @@ const PlaylistItem = styled.div`
         border: 1px solid #aaa;
         font-weight: 700;
     }
+
+    @media screen and (max-width: 700px) {
+        font-weight: 700;
+        padding: .25rem 0;
+    }
 `
 
 const Timer = styled.span`

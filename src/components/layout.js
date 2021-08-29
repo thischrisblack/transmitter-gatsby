@@ -11,7 +11,7 @@ const Container = styled.div`
         'sidebar'
         'content';
     @media screen and (min-width: 700px) {
-        grid-template-columns: 24rem minmax(0, 70rem) auto;
+        grid-template-columns: 24rem minmax(0, 104rem) auto;
         grid-template-areas: 'sidebar content .';
     }
 `

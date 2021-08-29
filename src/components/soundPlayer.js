@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { formatTimer } from '../utils'
 
 const Player = styled.div`
-    font-size: 1.4rem;
     padding: 0 0 0.5rem 0;
 `
 
