@@ -24,6 +24,7 @@ const Messages = ({ messages, loading }) => {
                 pathname="/messages/"
             />
             <MessagesContainer>
+            <h2>Messages</h2>
                 {!loading && !messages.length && <p>Nothing.</p>}
                 {!loading && messages.length > 0 && (
                     <MessageList>
