@@ -27,7 +27,10 @@ const GetPosts = Component => {
                     if (props.path !== '/music/') {
                         if (props.path === '/messages/') {
                             messagesList = messagesList.filter(
-                                message => message.type !== 'calendar' && message.type !== 'code'
+                                message =>
+                                    message.type !== 'calendar' &&
+                                    message.type !== 'code' &&
+                                    message.type !== 'video'
                             )
                         } else if (props.path === '/code/') {
                             messagesList = messagesList.filter(
