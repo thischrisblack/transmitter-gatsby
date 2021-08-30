@@ -135,12 +135,11 @@ const Music = ({ messages, loading }) => {
                 <MusicIntro>
                     <h2>The music of Chris Black.</h2>
                     <p>
-                        Most of this music is available for purchase and
-                        download at{' '}
+                        Most of this music is available at{' '}
                         <a href="https://chrisblackmusic.bandcamp.com/">
                             Bandcamp
                         </a>
-                        . It is also available on{' '}
+                        ,{' '}
                         <a
                             href="https://open.spotify.com/artist/6bBszGU2QRVLpb3wmQMRtZ?si=7V_M2pqLRzGlJdXra8_6Gw"
                             title="Listen to Chris Black on Spotify"
@@ -168,8 +167,8 @@ const Music = ({ messages, loading }) => {
                         >
                             Amazon
                         </a>
-                        . You can also read more about my musical history and
-                        the things people have said about it{' '}
+                        . You can read more about my musical history and the
+                        things people have said about it{' '}
                         <a href="/about-music">here</a>.
                     </p>
                 </MusicIntro>
