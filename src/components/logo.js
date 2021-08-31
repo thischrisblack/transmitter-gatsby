@@ -20,14 +20,15 @@ const Name = styled.div`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: url(img/static06.gif);
+    background-image: url(../img/static01.gif);
+    background-size: 18000%;
 `
 
 export default ({
     style = {},
-    fillC = 'url(#darkStatic)',
-    fillB = 'url(#darkStatic)',
-    fillLightning = 'url(#lightStatic)',
+    fillC = 'url(#lightStatic)',
+    fillB = 'url(#lightStatic)',
+    fillLightning = 'url(#darkStatic)',
     width = '100%',
     className = '',
     height = '100%',
@@ -69,11 +70,11 @@ export default ({
                 {/* prettier-ignore */}
                 <image
       use="true"
-      href="../img/static03.gif"
+      href="../img/static05.gif"
       x="0"
       y="0"
-      width="500"
-      height="700"
+      width="1500"
+      height="1700"
       preserveAspectRatio="none"
     />
             </pattern>

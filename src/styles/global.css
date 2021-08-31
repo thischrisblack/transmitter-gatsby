@@ -14,9 +14,9 @@ html {
 
 html::after {
     content: '';
-    background-image: url(../../static/img/static04.gif);
+    background-image: url(../../static/img/static05.gif);
     background-size: cover;
-    opacity: 0.025;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -30,10 +30,10 @@ body {
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
     font-size: 1.5rem;
-    color: #000;
+    color: ##fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
     padding: 0;
-    background: #fff;
+    background: #000;
 }
 
 @media screen and (min-width: $breakpoint) {
@@ -98,7 +98,8 @@ a {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: url(../../static/img/static07.gif);
+    background-image: url(../../static/img/static02.gif);
+    background-size: 12000%;
 }
 
 a:hover {
@@ -106,6 +107,7 @@ a:hover {
 }
 
 p {
+    color: #eee;
     a {
         border-bottom: 1px solid black;
     }

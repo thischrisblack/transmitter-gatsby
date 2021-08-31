@@ -22,7 +22,7 @@ const Timestamp = styled.div`
 const Title = styled.div`
     font-weight: 700;
     font-size: 1.7rem;
-    color: rgb(44, 9, 9);
+    color: #733;
     margin-bottom: 0.5rem;
     text-shadow: none;
 `

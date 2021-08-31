@@ -24,11 +24,13 @@ const NavItem = styled.li`
     > a {
         text-shadow: none;
         text-decoration: none;
+        color: #fff;
 
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: url(../img/static03.gif);
+        // -webkit-text-fill-color: transparent;
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // background-image: url(../img/static01.gif);
+        // background-size: 18000%;
     }
 
     &.active a {
