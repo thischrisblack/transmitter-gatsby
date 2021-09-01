@@ -14,6 +14,13 @@ const MessageList = styled.ul`
     list-style-type: none;
 `
 
+const CodeIntro = styled.div`
+    margin-bottom: 4rem;
+    > h2 {
+        margin-bottom: 1rem;
+    }
+`
+
 const Code = ({ messages, loading }) => {
     return (
         <Layout>
@@ -24,10 +31,15 @@ const Code = ({ messages, loading }) => {
                 pathname="/code/"
             />
             <MessagesContainer>
-                <h2>
-                    Both music and code are structures made of nothing that
-                    contain everything.
-                </h2>
+                <CodeIntro>
+                    <h2>Code</h2>
+                    <p>
+                        Here is a collection of personal projects or things I've
+                        made for others. It's mostly JavaScript and/or React.
+                        Professionally I work mostly in TypeScript, Node.js, and
+                        Aurelia.
+                    </p>
+                </CodeIntro>
                 {!loading && !messages.length && <p>Nothing.</p>}
                 {!loading && messages.length > 0 && (
                     <MessageList>

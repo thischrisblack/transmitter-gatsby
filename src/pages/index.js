@@ -26,6 +26,11 @@ export default ({ data }) => (
                 This is Chris Black transmitting from an undisclosed location.
                 Please remain calm.
             </p>
+            <p>
+                I play music and write code. I play mostly double bass. I write
+                mostly JavaScript. Both music and code are structures made of
+                nothing that contain everything.
+            </p>
         </Greeting>
     </Layout>
 )
