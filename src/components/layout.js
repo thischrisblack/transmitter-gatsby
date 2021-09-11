@@ -39,7 +39,7 @@ const Main = styled.div`
 
     border-top: 5px solid black;
 
-    border-image-source: url(img/static06.gif);
+    border-image-source: url(../img/static-grainy.gif);
     border-image-slice: 1;
     border-image-width: 1;
     border-image-outset: 0;
@@ -52,12 +52,33 @@ const Main = styled.div`
     }
 `
 
+const Name = styled.div`
+    display: block;
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: none;
+    text-align: center;
+
+    :hover {
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: url(../img/static-light.gif);
+        background-size: 1900px;
+    }
+`
+
 export default ({ children }) => {
     return (
         <Container>
             <Header>
                 <Link to="/">
                     <Logo width="180" />
+                </Link>
+                <Link to="/">
+                    <Name>Chris Black</Name>
                 </Link>
                 <Nav />
             </Header>

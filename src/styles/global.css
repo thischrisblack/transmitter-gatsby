@@ -14,9 +14,9 @@ html {
 
 html::after {
     content: '';
-    background-image: url(../../static/img/static04.gif);
+    background-image: url(../../static/img/static-light.gif);
     background-size: cover;
-    opacity: 0.025;
+    opacity: 0.03;
     top: 0;
     left: 0;
     bottom: 0;
@@ -46,41 +46,19 @@ h1 {
     margin-bottom: 2rem;
     color: #000;
     text-shadow: none;
-
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: url(../../static/img/static06.gif);
 }
 
 h2 {
     margin-bottom: 3.6rem;
 }
 
-.fuzzy-image {
-    width: 100%;
-    display: block;
-    position: relative;
-}
-
-.fuzzy-image::after {
-    content: '';
-    background-image: url(../../static/img/static05.gif);
-    background-size: cover;
-    opacity: 0.25;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-}
-
 .error {
     font-weight: 700;
     padding: 1rem;
     color: #fff;
-    background-image: url(../../static/img/static06.gif);
+    background-image: url(../../static/img/static-dark.gif);
     background-size: cover;
+    background-position: bottom;
 }
 
 .clear {
@@ -90,19 +68,18 @@ h2 {
 }
 
 a {
-    color: #471100;
+    color: #000;
     font-weight: 700;
     text-decoration: none;
     text-shadow: none;
-
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: url(../../static/img/static07.gif);
 }
 
 a:hover {
-    text-decoration: underline;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(../../static/img/static-light.gif);
+    background-size: 1900px;
 }
 
 p {

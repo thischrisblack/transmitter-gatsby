@@ -25,7 +25,7 @@ const PlaylistItem = styled.div`
 
     @media screen and (max-width: 700px) {
         font-weight: 700;
-        padding: .25rem 0;
+        padding: 0.25rem 0;
     }
 `
 
@@ -37,8 +37,8 @@ const Timer = styled.span`
 `
 
 const ProgressBar = styled.div`
-    background-image: url(../img/static04.gif);
-    background-size: 1500px;
+    background-image: url(../img/static-grainy.gif);
+    background-size: 200px;
     display: block;
     position: absolute;
     top: 0;
