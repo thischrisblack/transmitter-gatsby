@@ -52,6 +52,10 @@ const Main = styled.div`
     }
 `
 
+const LogoContainer = styled.div`
+    display: inline-block;
+`
+
 const Name = styled.div`
     display: block;
     color: black;
@@ -74,12 +78,14 @@ export default ({ children }) => {
     return (
         <Container>
             <Header>
-                <Link to="/">
-                    <Logo width="180" />
-                </Link>
-                <Link to="/">
-                    <Name>Chris Black</Name>
-                </Link>
+                <LogoContainer>
+                    <Link to="/">
+                        <Logo width="180" />
+                    </Link>
+                    <Link to="/">
+                        <Name>Chris Black</Name>
+                    </Link>
+                </LogoContainer>
                 <Nav />
             </Header>
             <Main>{children}</Main>
