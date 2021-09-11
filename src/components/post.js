@@ -36,9 +36,9 @@ const Image = styled.div`
 
     &:after {
         content: '';
-        background-image: url(../img/static02.gif);
-        background-size: 300px 400px;
-        opacity: 0.2;
+        background-image: url(../img/static-dark.gif);
+        background-size: cover;
+        opacity: 0.4;
         top: 0;
         left: 0;
         bottom: 0;
@@ -137,7 +137,11 @@ const Post = ({ message, type }) => {
                     onClick={window.innerWidth > 700 ? resizeImage : undefined}
                     style={initialImageSize}
                 >
-                    <img src={message.image} alt={message.title} />
+                    <img
+                        src={message.image}
+                        alt={message.title || message.message}
+                        loading="lazy"
+                    />
                 </Image>
             )}
 

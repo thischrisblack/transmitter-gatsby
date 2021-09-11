@@ -15,8 +15,8 @@ const Controls = styled.span`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: url(../img/static01.gif);
-    background-size: 12000%;
+    background-image: url(../img/static-grainy.gif);
+    background-size: 1400%;
 `
 
 const Timer = styled.span`
@@ -25,9 +25,9 @@ const Timer = styled.span`
 `
 
 const ProgressBar = styled.span`
-    background-image: url(../img/static04.gif);
+    background-image: url(../img/static-grainy.gif);
     background-size: cover;
-    height: 1px;
+    height: 2px;
     display: block;
 `
 

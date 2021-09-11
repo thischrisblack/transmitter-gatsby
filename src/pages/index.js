@@ -13,15 +13,47 @@ const Greeting = styled.div`
     }
 `
 
+const Image = styled.div`
+    position: relative;
+    margin: 0 0 3rem 0;
+
+    &:after {
+        content: '';
+        background-image: url(../img/static-dark.gif);
+        background-size: cover;
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+    }
+`
+
 export default ({ data }) => (
     <Layout>
         <SEO />
         <Greeting>
-            <img
-                className="fuzzy-image"
-                src={data.site.siteMetadata.image}
-                alt={data.site.siteMetadata.imageAlt}
-            />
+            <Image
+                style={{
+                    width: '100%',
+                    paddingTop: `99.7%`,
+                }}
+            >
+                <img
+                    src={data.site.siteMetadata.image}
+                    alt={data.site.siteMetadata.imageAlt}
+                />
+            </Image>
             <p>
                 This is Chris Black transmitting from an undisclosed location.
                 Please remain calm.

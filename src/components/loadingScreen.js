@@ -10,7 +10,7 @@ const LoadingScreen = styled.div`
     width: 100vw;
     height: 100vh;
     z-index: 10;
-    background-image: url('../img/static03.gif');
+    background-image: url('../img/static-dark.gif');
     background-size: cover;
     padding: 5rem 4rem;
     font-size: 6rem;

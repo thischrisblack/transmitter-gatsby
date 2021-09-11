@@ -8,21 +8,6 @@ const Logo = styled.div`
     text-align: center;
 `
 
-const Name = styled.div`
-    display: block;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    text-shadow: none;
-    text-align: center;
-
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: url(img/static06.gif);
-`
-
 export default ({
     style = {},
     fillC = 'url(#darkStatic)',
@@ -52,11 +37,11 @@ export default ({
                 {/* prettier-ignore */}
                 <image
       use="true"
-      href="../img/static01.gif"
+      href="../img/static-light.gif"
       x="0"
       y="0"
-      width="4000"
-      height="4000"
+      width="1000"
+      height="1000"
       preserveAspectRatio="none"
     />
             </pattern>
@@ -69,7 +54,7 @@ export default ({
                 {/* prettier-ignore */}
                 <image
       use="true"
-      href="../img/static03.gif"
+      href="../img/static-dark.gif"
       x="0"
       y="0"
       width="500"
@@ -92,6 +77,5 @@ export default ({
                 fill={fillLightning}
             />
         </svg>
-        <Name>Chris Black</Name>
     </Logo>
 )

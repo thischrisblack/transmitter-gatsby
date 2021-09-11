@@ -21,16 +21,6 @@ const NavItem = styled.li`
     font-size: 1.5rem;
     margin-bottom: 10px;
 
-    > a {
-        text-shadow: none;
-        text-decoration: none;
-
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: url(../img/static03.gif);
-    }
-
     &.active a {
         font-size: 2.2rem;
     }
