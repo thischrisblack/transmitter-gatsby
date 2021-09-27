@@ -115,11 +115,18 @@ const Message = props => {
     return (
         <Layout>
             {loading && <Loading message="Loading..." />}
-            <SEO
-                title={message.title || 'A message from Chris Black.'}
-                description={message.message || 'A message from Chris Black.'}
-                pathname={'/message/?' + messageId}
-            />
+            {!loading && (
+                <SEO
+                    title={message.title || 'A message from Chris Black.'}
+                    description={
+                        message.message || 'A message from Chris Black.'
+                    }
+                    image={message.image}
+                    pathname={'/message/?' + messageId}
+                    article={true}
+                />
+            )}
+
             <MessageItem>
                 <Timestamp>
                     {new Date(Number(message.timestamp)).toUTCString()}
