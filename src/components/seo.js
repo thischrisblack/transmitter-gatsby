@@ -25,8 +25,6 @@ const SEO = ({ title, description, image, pathname, article }) => (
                 url: `${siteUrl}${pathname || '/'}`,
             }
 
-            console.log('HEY', JSON.stringify(seo))
-
             return (
                 <>
                     <Helmet title={seo.title} titleTemplate={titleTemplate}>
