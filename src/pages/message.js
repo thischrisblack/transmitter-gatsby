@@ -30,9 +30,8 @@ const Title = styled.div`
 const Image = styled.div`
     position: relative;
     float: left;
-    margin: 0 2rem 1rem 0;
+    margin: 2rem 2rem 2rem 0;
     transition: all 0.2s;
-    cursor: pointer;
 
     &:after {
         content: '';

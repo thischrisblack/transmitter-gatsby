@@ -8,7 +8,7 @@ const Player = styled.div`
 
 const Controls = styled.span`
     display: inline-block;
-    width: 5rem;
+    width: 7rem;
     font-weight: 700;
     cursor: pointer;
     padding: 0;
@@ -16,12 +16,14 @@ const Controls = styled.span`
     background-clip: text;
     -webkit-background-clip: text;
     background-image: url(../img/static-grainy.gif);
-    background-size: 1400%;
+    background-size: 1700%;
+    font-size: 2rem;
 `
 
 const Timer = styled.span`
     color: #333;
     padding: 0;
+    font-size: 1.6rem;
 `
 
 const ProgressBar = styled.span`
@@ -29,6 +31,7 @@ const ProgressBar = styled.span`
     background-size: cover;
     height: 2px;
     display: block;
+    margin-top: 0.5rem;
 `
 
 const SoundPlayer = props => {

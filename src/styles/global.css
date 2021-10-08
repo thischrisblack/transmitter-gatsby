@@ -83,6 +83,7 @@ a:hover {
 }
 
 p {
+    padding: 0.3rem;
     a {
         border-bottom: 1px solid black;
     }
